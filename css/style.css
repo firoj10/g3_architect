@@ -86,8 +86,8 @@ justify-content: space-between;
 } */
 .architects-photo img{
     height: 240px;
-    width: 240px;
-    margin: 5px 5px 5px 0px;
+    width: 224px;
+    margin: 5px 3px 3px 0px;
 }
 .architects-title{
 font-weight: 700;
@@ -112,9 +112,12 @@ font-size: 45px;
     margin-bottom: 100px;
 }
 .architects-product{
+    margin-top: 80px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
 }
 .sort-description{
     margin-top: 10px;
@@ -128,7 +131,15 @@ font-size: 40px;
 font-weight: 700;
 padding-bottom: 10px;
 }
-
+.product-line{
+    height: 76px;
+    width: 2px;
+    background-color: #FF900E;
+    position: relative;
+    bottom: 90px;
+    left: -21px;
+   
+}
 .sort-title{
 font-size: 20px;
 font-weight: 600;
@@ -157,7 +168,7 @@ margin-top: 2px;
     background: #FF900E;
     position: relative;
     bottom: 82px;
-    left: -86px;
+    left: -65px;
     color: #FFFFFF;
     text-align: center;
     justify-content: center;
@@ -206,14 +217,34 @@ font-size: 40px;
     justify-content: space-between;
     align-items: center;
 }
-/* .sponspor-box{
-    /* height: 80px;
-    width: 90px;
-    margin: 5px 5px 5px 0px;    */
-
 .sponspor-box img{
     filter: grayscale(1);
 }
+/* ...........contact-section............ */
+.contact{
+    background: #FFF8F3;
+    margin-top: 150px;
+    margin-bottom: 60px;
+}
+.contact .section-title{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.contact input[type="password"], input[type="email"], textarea {
+    margin-bottom: 24px;
+    border: 0;
+    width: 100%;
+    padding: 18px 30px;
+}
+input{
+    height: 64px;
+}
+.contact a{
+    text-decoration: none;
+}
+
+
 /* ............footer-section-start ..............*/
 .footer-section{
     text-align: center;
@@ -222,12 +253,10 @@ font-size: 40px;
 }
 .footer-title{
     background-color: #FFF4E7;
-    padding: 10px 0;
+    padding: 40px 0;
 }
 /* ............footer-section-end..............*/
-.hide{
-    display: none;
-}
+
 
 /* .............responsive break-section-start............ */
 @media (max-width: 575.98px) { 
@@ -296,10 +325,16 @@ font-size: 40px;
       .architects-features, .architects-product{
         grid-template-columns:repeat(1, 1fr); 
       }
-      .awards-boxs, .sponspors-boxs{
+       .awards-boxs, .sponspors-boxs{
         grid-template-columns:repeat(2, 1fr); 
       }
+      .exprence-box{
+        left: 22px;
+    }
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
-@media screen and (min-width: 1200px) {  }
