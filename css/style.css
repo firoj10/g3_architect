@@ -107,7 +107,7 @@ font-size: 45px;
     margin-bottom: 100px;
 }
 .architects-product{
-    margin-top: 80px;
+    margin-top: 0px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
@@ -211,6 +211,7 @@ font-size: 40px;
 }
 .sponspor-box img{
     filter: grayscale(1);
+    width: 60%;
 }
 /* ................sponspors-section-start ............*/
 
@@ -249,12 +250,14 @@ input{
 .footer-title{
     background-color: #FFF4E7;
     padding: 40px 0;
+    
+    color: #424242;
 }
 /* ............footer-section-end..............*/
 
 
 /* .............responsive breakpoint-section-start............ */
-@media (max-width: 575.98px) { 
+@media screen and (max-width: 576px) { 
    .navbar, .nav-items{
       flex-direction: column;
     }
@@ -265,6 +268,39 @@ input{
         text-align: center;
         padding-bottom: 13px;
     }
+    .header-title {
+        font-weight: 700;
+        font-size: 40px;
+        padding-top: 116px;
+        padding-bottom: 40px;
+      }
+      .exprence-box {
+        height: 89px;
+        width: 170px;
+      }
+      .architects-title, .sponspor-title {
+        font-size: 28px;
+      }
+      .sponspor-box img {
+        width: 24%;
+      }
+      .contact {
+        margin-top: 0px;
+      }
+      .nav-title {
+        font-size: 20px;
+      }
+      .exprence-title {
+        font-size: 27px;
+      }
+      .architects-product-section {
+        margin-top: 69px;
+        margin-bottom: -3px;
+      }
+      .product-title {
+        font-size: 31px;
+        padding-bottom: 0px;
+      }
     .exprence-box{
         left: 22px;
     }
@@ -276,12 +312,12 @@ input{
         margin-bottom: 0px;
     }
     .sponspor-box{
-        height: 80px;
-        width: 90px;
-        margin: 5px 5px 5px 0px;   
-    }
+      height: 40px;
+      margin: 5px 5px 5px 0px;   
+  }
+   
 }
-@media screen and (min-width: 576px) and (max-width: 767.98px) { 
+@media screen and (min-width: 577px) and (max-width: 768px) { 
     .navbar, .nav-items{
         flex-direction: column;
       }
@@ -295,6 +331,9 @@ input{
           text-align: center;
           padding-bottom: 13px;
       }
+      .sponspor-box img {
+        width: 30%;
+      }
       .exprence-box{
           left: 22px;
       }
@@ -305,13 +344,15 @@ input{
           margin-top: 23px;
           margin-bottom: 0px;
       }
-      .sponspor-box{
-          height: 80px;
-          width: 90px;
-          margin: 5px 5px 5px 0px;   
+      .contact {
+        margin-top: 3px;
       }
+      .sponspor-box{
+        height: 60px;
+        margin: 5px 5px 5px 0px;   
+    }
 }
-@media screen and (min-width: 768px) and (max-width: 991.98px) { 
+@media screen and (min-width: 769px) and (max-width: 992px) { 
     .navbar, .nav-items{
         flex-direction: column;
       }
@@ -321,13 +362,32 @@ input{
        .awards-boxs, .sponspors-boxs{
         grid-template-columns:repeat(2, 1fr); 
       }
+     .award-box {
+        margin: 0px 26px;
+         padding: 39px 0;
+         margin-top: 10px;
+        margin-bottom: 21px;
+      }
+      .nav-title {
+        font-size: 25px;
+      }
       .exprence-box{
         left: 22px;
     }
+    .sponspor-box img {
+        width: 35%;
+      }
+      .contact {
+        margin-top: 3px;
+      }
     .contact-section {
         display: flex;
         flex-direction: column;
     }
+    .sponspor-box{
+      height: 80px;
+      margin: 5px 5px 5px 0px;   
+  }
 }
 /* .............responsive breakpoint-section-start............ */
 
